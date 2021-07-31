@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import css from "./App.module.css";
+import style from "./App.module.css";
 import searchApi from "./services/searchApi";
 import Modal from "./components/Modal";
 import SearchForm from "./components/Searchbar";
@@ -73,7 +73,7 @@ class App extends Component {
       this.state;
 
     return (
-      <div className={css.App}>
+      <div className={style.App}>
         <SearchForm onSubmit={this.onChangeQwery} />
 
         {error && <h1>{error}</h1>}

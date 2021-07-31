@@ -1,8 +1,8 @@
-import css from "./Button.module.css";
+import style from "./Button.module.css";
 import PropTypes from "prop-types";
 const Button = ({ onClick }) => {
   return (
-    <button className={css.Button} type="button" onClick={onClick}>
+    <button className={style.Button} type="button" onClick={onClick}>
       Load more
     </button>
   );

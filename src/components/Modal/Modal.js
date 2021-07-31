@@ -1,4 +1,4 @@
-import css from "./Modal.module.css";
+import style from "./Modal.module.css";
 
 import { createPortal } from "react-dom";
 import { Component } from "react";
@@ -26,8 +26,8 @@ class Modal extends Component {
 
   render() {
     return createPortal(
-      <div className={css.Overlay} onClick={this.handleBackdropClick}>
-        <div className={css.Modal}>{this.props.children}</div>
+      <div className={style.Overlay} onClick={this.handleBackdropClick}>
+        <div className={style.Modal}>{this.props.children}</div>
       </div>,
       modalRoot
     );
